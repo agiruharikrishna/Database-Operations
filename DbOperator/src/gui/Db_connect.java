@@ -5,9 +5,11 @@
  */
 package gui;
 import java.awt.Component;
+import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 
@@ -37,7 +39,7 @@ public class Db_connect {
       st =conn.createStatement();
       st =conn.createStatement();
       return conn;
-      }catch(Exception e){
+      }catch(ClassNotFoundException | SQLException e){
           JOptionPane.showMessageDialog(c, e,"Database Error",0);
         return null;
   }
@@ -48,7 +50,7 @@ public class Db_connect {
 //            createConnection(driver,Url,user,password);
          result=st.executeQuery(query);
         }
-        catch(Exception e){
+        catch(SQLException e){
             c.setVisible(false);
         JOptionPane.showMessageDialog(component, e, "Database Error", 0);
         
@@ -62,7 +64,7 @@ public class Db_connect {
             JOptionPane.showMessageDialog(null, "operation done");
             
         }
-        catch(Exception e){
+        catch(HeadlessException | SQLException e){
             c.setVisible(false);
         JOptionPane.showMessageDialog(component, e, "Database Error", 0);
         }

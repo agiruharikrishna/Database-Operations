@@ -429,14 +429,10 @@ public class DbOperationsGui extends javax.swing.JFrame {
     public static void main(String args[]) {
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                DbOperationsGui dbOperationsGui = new DbOperationsGui();
-                dbOperationsGui.resultTableContainer.setVisible(false);
-                dbOperationsGui.setVisible(true);
-
-            }
-
+        java.awt.EventQueue.invokeLater(() -> {
+            DbOperationsGui dbOperationsGui = new DbOperationsGui();
+            dbOperationsGui.resultTableContainer.setVisible(false);
+            dbOperationsGui.setVisible(true);
         });
     }
 
