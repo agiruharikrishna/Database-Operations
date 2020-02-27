@@ -10,7 +10,7 @@ various features of JDBC and its interaction with a MySQL DB Server environment.
 ### Description
 * It is a Java-based GUI front-end (client-side) application that will connect to your MySQL server via JDBC.<br>
 * The database contains two users; the root user(having all privileges) and client user(having only select privileges)
-* To generate database run the script [script](Resources/script1.sql) in MySQL workbench
+* To generate database run the script [script](Resources/scripts/script1.sql) in MySQL workbench
 ## Resources and packages
 >The application utilises the following resources and packages
 * [Java Swing][1] -for building the graphical user inteface
@@ -26,4 +26,15 @@ various features of JDBC and its interaction with a MySQL DB Server environment.
 [5]: https://www.mysql.com/
 
 ### Screenshots
-[Select* by root user](Resources/screenshots/select*.png)
+* From queris by root user in [script](Resourses/scripts/rootCalls.sql)
+    * [select *](Resources/screenshots/root_select*.png)
+    * [select specified](Resources/screenshots/root_selectSpecified.png)
+    * [insert ](Resources/screenshots/root_insert.png)
+    * [delete ](Resources/screenshots/root_delete.png)
+    * [update](Resources/screenshots/root_update.png)
+* From queris by client user in [script](Resourses/scripts/clientCalls.sql)
+    * [select *](Resources/screenshots/client_select*.png)
+    * [select specified](Resources/screenshots/client_selectSpecified.png)
+    * [insert ](Resources/screenshots/client_insert.png)
+    * [delete ](Resources/screenshots/client_delete.png)
+    * [update](Resources/screenshots/client_update.png)
