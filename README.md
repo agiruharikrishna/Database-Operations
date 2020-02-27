@@ -26,13 +26,13 @@ various features of JDBC and its interaction with a MySQL DB Server environment.
 [5]: https://www.mysql.com/
 
 ### Screenshots
-* From queris by root user in [script](Resourses/scripts/rootCalls.sql)
+* From queris by root user in [script](Resources/scripts/root_calls.sql)
     * [select *](Resources/screenshots/root_select*.png)
     * [select specified](Resources/screenshots/root_selectSpecified.png)
     * [insert ](Resources/screenshots/root_insert.png)
     * [delete ](Resources/screenshots/root_delete.png)
     * [update](Resources/screenshots/root_update.png)
-* From queris by client user in [script](Resourses/scripts/clientCalls.sql)
+* From queris by client user in [script](Resources/scripts/client_calls.sql)
     * [select *](Resources/screenshots/client_select*.png)
     * [select specified](Resources/screenshots/client_selectSpecified.png)
     * [insert ](Resources/screenshots/client_insert.png)
