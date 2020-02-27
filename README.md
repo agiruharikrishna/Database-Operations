@@ -34,7 +34,7 @@ various features of JDBC and its interaction with a MySQL DB Server environment.
     * [update](Resources/screenshots/root_update.png)
 * From queris by client user in [script](Resources/scripts/client_calls.sql)
     * [select *](Resources/screenshots/client_select*.png)
-    * [select specified](Resources/screenshots/client_selectSpecified.png)
+    * [select specified](Resources/screenshots/client_select_pecified.png)
     * [insert ](Resources/screenshots/client_insert.png)
     * [delete ](Resources/screenshots/client_delete.png)
     * [update](Resources/screenshots/client_update.png)
