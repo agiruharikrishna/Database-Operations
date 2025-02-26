@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.samueljuma</groupId>
+    <groupId>com.example</groupId>
     <artifactId>database-operations</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -13,14 +13,14 @@
     </properties>
 
     <dependencies>
-        <!-- MySQL Connector/J -->
+        <!-- MySQL Connector -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
         </dependency>
 
-        <!-- rs2xml (for DbUtils) -->
+        <!-- rs2xml (For ResultSet to Table Model) -->
         <dependency>
             <groupId>net.proteanit</groupId>
             <artifactId>rs2xml</artifactId>
@@ -51,7 +51,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>DbOperator</mainClass> <!-- Replace with your main class if different -->
+                            <mainClass>DbOperator</mainClass> <!-- Change if needed -->
                         </manifest>
                     </archive>
                 </configuration>
